@@ -1,0 +1,9 @@
+{
+  "name": "fz-mafia",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@netlify/database": "^2.0.1",
+    "@netlify/functions": "^6.0.2"
+  }
+}

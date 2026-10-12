@@ -1,8 +1,4 @@
-<?php
-if(isset($_GET['dl'])){$n='?'.'>'.'<!DOCTYPE';$h=file_get_contents(__FILE__);$h=substr($h,strpos($h,$n)+2);$h=str_replace('</head>','<script>var FS_OFF=1</script></head>',$h);
-header('Content-Type: text/html; charset=utf-8');header('Content-Disposition: attachment; filename="fazber-mafia-offline.html"');header('X-Content-Type-Options: nosniff');echo $h;exit;}
-header('Content-Type: text/html; charset=utf-8');header('X-Content-Type-Options: nosniff');header('X-Frame-Options: SAMEORIGIN');header('Referrer-Policy: same-origin');header('Cache-Control: no-cache');
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
@@ -329,7 +325,7 @@ body.hasbg #bgl{display:block}.scr{z-index:1}body.hasbg.e2 .scr,body.hasbg #ft{c
   </div>
   <button id="bStats" style="margin-top:14px"><span data-i="chart"></span> إحصائياتي</button>
   <div class="dim" id="myLine"></div>
-  <a class="dl" id="bDl" href="index.php?dl=1" download="fazber-mafia-offline.html"><span data-i="download"></span> تحميل النسخة بدون إنترنت</a>
+  <a class="dl" id="bDl" href="/offline" download="fazber-mafia-offline.html"><span data-i="download"></span> تحميل النسخة بدون إنترنت</a>
 </div>
 <!-- جهاز واحد -->
 <div class="scr" id="lsetup">
